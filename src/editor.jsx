@@ -2,8 +2,8 @@ import React, { useState } from 'react';
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 
-const App = () => {
-  const [text, setText] = useState('<p>Hello from CKEditor 5!</p>');
+const App = ({ text, setText }) => {
+  // const [text, setText] = useState('<p>Hello from CKEditor 5!</p>');
 
   const onChange = (event, editor) => setText(editor.getData());
 

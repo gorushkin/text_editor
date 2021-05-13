@@ -28,7 +28,6 @@ app.get('/test', (req, res) => {
   res.status(200).json({ message: "It's express" });
 });
 
-app.use(express.static('./uploads'));
 app.use(express.static('./server/uploads'));
 
 app.post('/uploads', MultipartyMiidleware, (req, res) => {
